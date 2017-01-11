@@ -4,6 +4,6 @@
     "version": "0.1.0",
     "command": "g++",
     "isShellCommand": true,
-    "args": ["${workspaceRoot}/JK_C-PLUS-PLUS/l01_setSail/0405/IODemo.cpp", "-o", "${workspaceRoot}/JK_C-PLUS-PLUS/build/IODemo.out"],
+    "args": ["${workspaceRoot}/JK_C-PLUS-PLUS/l01_setSail/0501/find_max_min.cpp", "-o", "${workspaceRoot}/JK_C-PLUS-PLUS/build/test.out"],
     "showOutput": "always"
 }
