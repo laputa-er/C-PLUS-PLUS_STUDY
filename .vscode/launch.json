@@ -5,7 +5,7 @@
             "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/JK_C-PLUS-PLUS/build/test.out",
+            "program": "${workspaceRoot}/build/test.out",
             "stopAtEntry": false,
             "cwd": "${workspaceRoot}",
             "externalConsole": true,
