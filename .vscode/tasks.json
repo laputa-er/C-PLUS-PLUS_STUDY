@@ -4,6 +4,6 @@
     "version": "0.1.0",
     "command": "g++",
     "isShellCommand": true,
-    "args": ["${workspaceRoot}/JK_C-PLUS-PLUS/l03_class_encapsulation_one/0611/Teacher.cpp", "-o", "${workspaceRoot}/build/test.out"],
+    "args": ["${workspaceRoot}/JK_C-PLUS-PLUS/l03_class_encapsulation_two/0501/const_func.cpp", "-o", "${workspaceRoot}/build/test.out"],
     "showOutput": "always"
 }
