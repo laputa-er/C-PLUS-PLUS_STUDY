@@ -1,7 +1,7 @@
 LIBS=-lm
 OBJS=MazeMap.o maze.o
 CFLAGS=-Wall
-SO=test
+SO=test.exe
 
 main:${OBJS}
 	g++ -o ${SO} ${OBJS}
