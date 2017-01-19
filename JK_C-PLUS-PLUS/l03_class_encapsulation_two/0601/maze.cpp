@@ -1,13 +1,34 @@
 #include <iostream>
-#include "MazeMap.h"
 #include <stdlib.h>
-#include <windows.h>
+#include "MazeMap.h"
+#include "MyMazePerson.h"
 
 using namespace std;
 
+const int SUCCESS = 0;
+
 int main(void)
 {
-	cout << "haha" << endl;
+	int map[8][9] = {
+		{WALL,WALL,WALL,WALL,WALL,WALL,WALL,ROAD,WALL},
+		{WALL,WALL,WALL,WALL,ROAD,WALL,WALL,ROAD,WALL},
+		{WALL,WALL,WALL,WALL,ROAD,WALL,WALL,ROAD,WALL},
+		{WALL,WALL,WALL,WALL,ROAD,WALL,WALL,ROAD,WALL},
+		{WALL,WALL,ROAD,ROAD,ROAD,ROAD,WALL,ROAD,WALL},
+		{WALL,WALL,ROAD,WALL,WALL,ROAD,ROAD,ROAD,WALL},
+		{WALL,ROAD,ROAD,WALL,WALL,WALL,WALL,WALL,WALL},
+		{WALL,ROAD,WALL,WALL,WALL,WALL,WALL,WALL,WALL}
+	};
+	MyMazeMap maze;
+	maze.setMazeMap(&map[0][0], 8, 9);
+	maze.setMazeWall('*');
+	MyMazePerson mazePerson;
+	mazePerson.setPersonPosition(1, 7);
+	mazePerson.setPersonSpeed(FAST);
+	mazePerson.setPersonChar('T');
+	mazePerson.start();
+
 	system("pause");
-	return 0;
+
+	return SUCCESS;
 }
