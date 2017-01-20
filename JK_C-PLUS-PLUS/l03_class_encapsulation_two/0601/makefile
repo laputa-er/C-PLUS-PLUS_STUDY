@@ -2,7 +2,7 @@ LIBS=-lm
 OBJS=MazeMap.o maze.o MazePerson.o MyMazeMap.o MyMazePerson.o
 CFLAGS=-Wall
 SO=test.exe
-INPUT=UTF8
+INPUT=UTF-8
 OUTPUT=GBK
 main:${OBJS}
 	g++ -o ${SO} ${OBJS};
