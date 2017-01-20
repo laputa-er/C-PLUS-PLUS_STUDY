@@ -1,5 +1,5 @@
 LIBS=-lm
-OBJS=MazeMap.o maze.o MazePerson.o
+OBJS=MazeMap.o maze.o MazePerson.o MyMazeMap.o MyMazePerson.o
 CFLAGS=-Wall
 SO=test.exe
 
@@ -9,6 +9,10 @@ MazeMap.o:MazeMap.cpp MazeMap.h Public.h
 	g++ -c MazeMap.cpp
 MazePerson.o:MazePerson.cpp MazePerson.h
 	g++ -c MazePerson.cpp
+MyMazeMap.o:MyMazeMap.cpp MyMazeMap.h
+	g++ -c MyMazeMap.cpp
+MyMazePerson.o:MyMazePerson.cpp MyMazePerson.h
+	g++ -c MyMazePerson.cpp
 maze.o: Maze.cpp MazeMap.cpp
 	g++ -c maze.cpp
 clean:
