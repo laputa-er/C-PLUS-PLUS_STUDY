@@ -1,7 +1,7 @@
 #include "MyMazePerson.h"
 #include "MazePerson.h"
 
-MyMazePerson::MyMazePerson()::mazePerson(new MazePerson)
+MyMazePerson::MyMazePerson():mazePerson(new MazePerson)
 {
 	// empty
 }
@@ -23,10 +23,10 @@ MyMazePerson::~MyMazePerson()
 
 void MyMazePerson::setPersonPic(char personChar)
 {
-	mazePerson->setPersonPic(char personChar);
+	mazePerson->setPersonPic(personChar);
 }
 
-void MyMazePerson::setPersonChar(personChar)
+MyMazePerson& MyMazePerson::setPersonChar(char personChar)
 {
 	mazePerson->setPersonChar(personChar);
 	return *this;

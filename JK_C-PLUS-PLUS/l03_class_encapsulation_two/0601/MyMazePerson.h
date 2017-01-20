@@ -22,7 +22,7 @@ public:
 	void setPersonPic(char personChar);
 	void setPersonForwardDirection(objectiveDirections myForward);
 	void setPersonSpeed(long speed);
-	void setPersonDpeed(int speed);
+	void setPersonSpeed(int speed);
 	void start();
 private:
 	MazePerson *mazePerson;
