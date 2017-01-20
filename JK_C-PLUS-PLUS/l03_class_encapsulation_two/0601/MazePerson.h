@@ -35,10 +35,10 @@ private:
     int preX; // 前一个位置的横坐标
     int preY; // 前一个位置的纵坐标
     int positionX; // 当前位置的横坐标
-    int pisitionY; // 当前位置的纵坐标
+    int positionY; // 当前位置的纵坐标
     int personSpeed; // 人当前的移动速度
     char personPic; // 表示人的字符
-    bool outOrNo; // 是否走出了迷宫
+    bool outOrNot; // 是否走出了迷宫
     objectiveDirections forward; // 方向
 
     void savePrePosition(); // 保存前一个坐标位置
