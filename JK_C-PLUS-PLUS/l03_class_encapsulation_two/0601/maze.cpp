@@ -1,6 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
-#include "MazeMap.h"
+#include "MyMazeMap.h"
 #include "MyMazePerson.h"
 
 using namespace std;
