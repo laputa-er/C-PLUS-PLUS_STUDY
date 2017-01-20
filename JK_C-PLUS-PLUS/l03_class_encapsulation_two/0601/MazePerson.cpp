@@ -29,7 +29,7 @@ MazePerson::MazePerson(int currentX, int currentY, objectiveDirections myForward
 	preX = 10000;
 	preY = 10000;
 	forward = myForward;
-	outOrNo = false;
+	outOrNot = false;
 }
 
 void MazePerson::savePrePosition()
@@ -68,11 +68,11 @@ void MazePerson::moveEast()
 	positionY = positionY;
 }
 
-void MozePerson::gotoxy(int x, int y)
+void MazePerson::gotoxy(int x, int y)
 {
 	COORD cd;
-	cd.x = x;
-	cd.y = y;
+	cd.X = x;
+	cd.Y = y;
 	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), cd);
 }
 
@@ -92,7 +92,7 @@ void MazePerson::drawPerson()
 	Sleep(personSpeed);
 }
 
-MazePerson &MazePerson::serPersonPosition(int coordinateX, int coordinateY)
+MazePerson &MazePerson::setPersonPosition(int coordinateX, int coordinateY)
 {
 	positionX = coordinateX;
 	positionY = coordinateY;
@@ -169,7 +169,7 @@ void MazePerson::turnRight()
 	}
 }
 
-void MazePerson::geAhead()
+void MazePerson::goAhead()
 {
 	switch(forward)
 	{
@@ -195,7 +195,7 @@ void MazePerson::geAhead()
 	{
 		gotoxy(0, 22);
 		cout << "哈哈，终于出来啦！" << endl;
-		outOrNo = true;
+		outOrNot = true;
 	}
 }
 
@@ -214,7 +214,7 @@ void MazePerson::setPersonSpeed(long speed)
 void MazePerson::start()
 {
 	int i = 0;
-	while (!outOrNo)
+	while (!outOrNot)
 	{
 		gotoxy(0, 15);
 		cout << i;
