@@ -78,6 +78,7 @@ void MazeMap::drawMap() const
 				cout << mazeRoad;
 			}
 		}
+		cout << endl;
 	}
 }
 
