@@ -11,12 +11,12 @@ MyMazeMap::MyMazeMap()
 
 MyMazeMap::MyMazeMap(int *mazeMap, int row, int column)
 {
-	this.mazeMap = new MazeMap(mazeMapForDelegate, row, column);
+	this->mazeMap = new MazeMap(mazeMap, row, column);
 }
 
-void MazeMapDeleate::defaultMode()
+void MyMazeMap::defaultMode()
 {
-	mazeMap->defaultMode();
+	this->mazeMap->defaultMode();
 }
 
 void MyMazeMap::drawMap() const
@@ -26,7 +26,7 @@ void MyMazeMap::drawMap() const
 
 void MyMazeMap::setMazeMap(int *mazeMap, int row, int column)
 {
-	this.mazeMap->setMazeMap(mazeMap, row, column);
+	this->mazeMap->setMazeMap(mazeMap, row, column);
 }
 
 void MyMazeMap::setMazeRoad(char road)
