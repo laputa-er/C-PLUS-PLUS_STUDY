@@ -21,7 +21,7 @@ public:
     MazePerson(); // 构造函数（默认）
     MazePerson(int currentX, int currentY); // 构造函数（位置）
     MazePerson(int currentX, int currentY, objectiveDirections myForward); // 构造函数（位置和方向）
-    MazePerson &setPersonPosition(char personChar); // 设置人的位置
+    MazePerson &setPersonPosition(int coordinateX, int coordinateY); // 设置人的位置
     MazePerson &setPersonChar(char personChar); // 设置代表人的字符
     MazePerson &setPersonForward(objectiveDirections myForward); // 设定人的方向
     void setPersonPos(int coordX, int coordY); // 设定人的位置

@@ -54,7 +54,7 @@ void MazePerson::moveNorth()
 	positionY = positionY - 1;
 }
 
-void MazePerson::maveWest()
+void MazePerson::moveWest()
 {
 	savePrePosition();
 	positionX = positionX -1;
