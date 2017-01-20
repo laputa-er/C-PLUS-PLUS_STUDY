@@ -92,7 +92,7 @@ void MazePerson::drawPerson()
 	Sleep(personSpeed);
 }
 
-MazePerson &MazePerson::setPersonPosition(int coordinateX, int coordinateY)
+MazePerson& MazePerson::setPersonPosition(int coordinateX, int coordinateY)
 {
 	positionX = coordinateX;
 	positionY = coordinateY;
@@ -105,7 +105,7 @@ void MazePerson::setPersonPos(int coordX, int coordY)
 	positionY = coordY;
 }
 
-MazePerson &MazePerson::setPersonChar(char personChar)
+MazePerson& MazePerson::setPersonChar(char personChar)
 {
 	personPic = personChar;
 	return *this;
@@ -116,7 +116,7 @@ void MazePerson::setPersonPic(char personChar)
 	personPic = personChar;
 }
 
-MazePerson &MazePerson::setPersonForward(objectiveDirections myForward)
+MazePerson& MazePerson::setPersonForward(objectiveDirections myForward)
 {
 	forward = myForward;
 	return *this;

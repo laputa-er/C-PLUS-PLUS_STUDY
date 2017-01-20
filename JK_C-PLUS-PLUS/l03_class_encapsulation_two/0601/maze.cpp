@@ -22,6 +22,7 @@ int main(void)
 	MyMazeMap maze;
 	maze.setMazeMap(&map[0][0], 8, 9);
 	maze.setMazeWall('*');
+	maze.drawMap();
 	MyMazePerson mazePerson;
 	mazePerson.setPersonPosition(1, 7);
 	mazePerson.setPersonSpeed(FAST);

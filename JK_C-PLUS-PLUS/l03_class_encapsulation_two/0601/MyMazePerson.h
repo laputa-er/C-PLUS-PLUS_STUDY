@@ -15,9 +15,9 @@ public:
 	MyMazePerson(int currentX, int currentY);
 	MyMazePerson(int currentX, int currentY, objectiveDirections myForward);
 	~MyMazePerson();
-	MyMazePerson &setPersonPosition(int coordinateX, int coordinateY);
-	MyMazePerson &setPersonChar(char personChar);
-	MyMazePerson &setPersonForward(objectiveDirections myForward);
+	MyMazePerson& setPersonPosition(int coordinateX, int coordinateY);
+	MyMazePerson& setPersonChar(char personChar);
+	MyMazePerson& setPersonForward(objectiveDirections myForward);
 	void setPersonPos(int coordX, int coordY);
 	void setPersonPic(char personChar);
 	void setPersonForwardDirection(objectiveDirections myForward);

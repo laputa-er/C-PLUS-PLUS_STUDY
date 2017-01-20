@@ -37,7 +37,7 @@ void MyMazePerson::setPersonForwardDirection(objectiveDirections myForward)
 	mazePerson->setPersonForwardDirection(myForward);
 }
 
-MyMazePerson &MyMazePerson::setPersonForward(objectiveDirections myForward)
+MyMazePerson& MyMazePerson::setPersonForward(objectiveDirections myForward)
 {
 	mazePerson->setPersonForward(myForward);
 	return *this;
@@ -48,7 +48,7 @@ void MyMazePerson::setPersonPos(int coordinateX, int coordinateY)
 	mazePerson->setPersonPos(coordinateX, coordinateY);
 }
 
-MyMazePerson &MyMazePerson::setPersonPosition(int coordinateX, int coordinateY)
+MyMazePerson& MyMazePerson::setPersonPosition(int coordinateX, int coordinateY)
 {
 	mazePerson->setPersonPosition(coordinateX, coordinateY);
 	return *this;
