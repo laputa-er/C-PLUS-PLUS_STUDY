@@ -26,6 +26,6 @@ public:
 	void drawMap() const; // 绘制地图
 private:
 	MazeMap *mazeMap; // 被代理类型的指针
-}
+};
 
 #endif // MyMazeMap_H_
