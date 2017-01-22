@@ -216,7 +216,8 @@ void MazePerson::start()
 	int i = 0;
 	while (!outOrNot)
 	{
-		gotoxy(0, 15);
+		// 移动显示步数的位置
+		gotoxy(0, 10);
 		cout << i;
 		i++;
 		moveForward();

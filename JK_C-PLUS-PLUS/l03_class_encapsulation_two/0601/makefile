@@ -6,7 +6,7 @@ INPUT=UTF-8
 OUTPUT=GBK
 main:${OBJS}
 	g++ -o ${SO} ${OBJS};
-	make clean;
+	rm -f ${OBJS};
 MazeMap.o:MazeMap.cpp MazeMap.h Public.h
 	g++ -c MazeMap.cpp -finput-charset=${INPUT} -fexec-charset=${OUTPUT}
 MazePerson.o:MazePerson.cpp MazePerson.h
@@ -18,4 +18,4 @@ MyMazePerson.o:MyMazePerson.cpp MyMazePerson.h
 maze.o: Maze.cpp MazeMap.cpp
 	g++ -c maze.cpp -finput-charset=${INPUT} -fexec-charset=${OUTPUT}
 clean:
-	rm -f ${OBJS} ${SO}
+	rm -f ${SO}
