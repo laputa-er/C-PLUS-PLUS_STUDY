@@ -1,7 +1,9 @@
 # 测试的环境设置过程
 
 (1) 下载安装 [Visual Studio Code](https://code.visualstudio.com)；
+
 (2) 下载并安装 [MSYS2 installer](http://msys2.github.io/)（建议使用迅雷下载，浏览器下载巨慢）；
+
 (3)  MSYS 环境更新
 
 *c:\mysy64\msys2_shell.exe*
