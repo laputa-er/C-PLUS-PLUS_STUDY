@@ -7,7 +7,7 @@ MyQueue::MyQueue(int queueCapacity)
 {
 	m_iQueueCapacity = queueCapacity;
 	ClearQueue();
-	m_pQueue = new int[m_iQueueLen]; // 队列长度(注意：这里为了简化没有处理可能出现的内存分配失败)
+	m_pQueue = new Customer[m_iQueueLen]; // 队列长度(注意：这里为了简化没有处理可能出现的内存分配失败)
 }
 
 // 析构函数
@@ -44,7 +44,7 @@ bool MyQueue::QueueFull() const
 }
 
 // 从队尾插入新元素(需要顺时针移动队尾指针)
-bool MyQueue::EnQueue(int element)
+bool MyQueue::EnQueue(Customer element)
 {
 	if(QueueFull())
 	{
@@ -61,7 +61,7 @@ bool MyQueue::EnQueue(int element)
 }
 
 // 从队首出队（需要顺时针移动队头指针）
-bool MyQueue::DeQueue(int &element)
+bool MyQueue::DeQueue(Customer &element)
 {
 	if(QueueEmpty())
 	{
@@ -82,7 +82,7 @@ void MyQueue::QueueTraverse()
 {
 	for(int i = 0; i < m_iQueueLen; i++)
 	{
-		cout << m_pQueue[(m_iHead + i) % m_iQueueCapacity] << endl;
+		m_pQueue[(m_iHead + i) % m_iQueueCapacity].printInfo();
 	}
 }
 
