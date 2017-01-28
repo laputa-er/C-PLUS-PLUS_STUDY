@@ -7,5 +7,6 @@ main.o: main.cpp
 MyQueue.o: MyQueue.cpp MyQueue.h
 	g++ -c MyQueue.cpp
 Customer.o: Customer.cpp Customer.h
+	g++ -c Customer.cpp
 clean:
 	rm -f test ${OBJS}
