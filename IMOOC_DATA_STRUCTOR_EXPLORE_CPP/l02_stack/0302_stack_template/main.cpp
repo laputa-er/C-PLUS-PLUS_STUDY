@@ -1,12 +1,12 @@
 #include <iostream>
 #include "MyStack.h"
-
+#include "Coordinate.h"
 using namespace std;
 
 int main(void)
 {
 	// 创建栈实例
-	MyStack *pStack = new MyStack(5);
+	MyStack<Coordinate> *pStack = new MyStack<Coordinate>(5);
 
 	// 判空
 	if(pStack->stackEmpty())
@@ -15,11 +15,11 @@ int main(void)
 	}
 
 	// 入栈
-	pStack->push('a'); // 底
-	pStack->push('b');
-	pStack->push('c');
-	pStack->push('d');
-	pStack->push('e'); // 顶
+	pStack->push(Coordinate(1, 1)); // 底
+	pStack->push(Coordinate(1, 2));
+	pStack->push(Coordinate(1, 3));
+	pStack->push(Coordinate(1, 4));
+	pStack->push(Coordinate(1, 5)); // 顶
 
 	// 栈长度
 	cout << pStack->stackLength() << endl;
@@ -32,9 +32,8 @@ int main(void)
 	}
 
 	// 出栈
-	char elem = 0;
+	Coordinate elem;
 	pStack->pop(elem);
-	cout << elem << endl;
 
 	// 遍历
 	pStack->stackTraverse(true);

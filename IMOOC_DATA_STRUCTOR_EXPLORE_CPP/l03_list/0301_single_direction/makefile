@@ -1,10 +1,12 @@
-OBJS=main.o MyStack.o
+OBJS=main.o List.o Node.o
 main: ${OBJS}
 	g++ -o test ${OBJS};
 	rm ${OBJS};
 main.o: main.cpp
 	g++ -c main.cpp
-MyQueue.o: MyStack.cpp MyStack.h
-	g++ -c MyStack.cpp
+List.o: List.cpp List.h
+	g++ -c List.cpp
+Node.o: Node.cpp Node.h
+	g++ -c Node.cpp
 clean:
 	rm -f test ${OBJS}
