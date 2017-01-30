@@ -204,6 +204,6 @@ bool List::ListInsertTail(Node *pNode)
 	newNode->data = pNode->data;
 	// 插入
 	currentNode->next = newNode;
-	m_iLength--;
+	m_iLength++;
 	return true;
 }

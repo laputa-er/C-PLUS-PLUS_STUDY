@@ -14,7 +14,9 @@ Person &Person::operator=(Person &person)
 // 重载判等运算符
 bool Person::operator==(Person &person)
 {
-	return this->name == person.name && this->phone == person.phone;
+	cout << "this->name == person.name:" << (this->name == person.name) << endl;
+	cout << "this->phone == person.phone:" << (this->phone == person.phone) << endl;
+	return (this->name == person.name && this->phone == person.phone);
 }
 
 // 重载输出运算符

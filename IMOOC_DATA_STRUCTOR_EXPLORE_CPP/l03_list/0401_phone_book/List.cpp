@@ -59,11 +59,13 @@ bool List::GetElem(int i, Node *pNode)
 // 只能拿到第一个数据域匹配的节点
 int List::LocateElem(Node *pNode)
 {
+	cout << "m_iLength:" << m_iLength << endl;
 	Node *currentNode = m_pList;
 	for(int i = 0; i < m_iLength; i++)
 	{
+		cout << i << endl;
 		currentNode = currentNode->next;
-		if(currentNode->data== pNode->data)
+		if(currentNode->data == pNode->data)
 		{
 			return i;
 		}
@@ -204,6 +206,6 @@ bool List::ListInsertTail(Node *pNode)
 	newNode->data = pNode->data;
 	// 插入
 	currentNode->next = newNode;
-	m_iLength--;
+	m_iLength++;
 	return true;
 }
