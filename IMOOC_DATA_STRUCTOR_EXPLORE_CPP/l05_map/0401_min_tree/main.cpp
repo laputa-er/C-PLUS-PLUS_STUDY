@@ -83,5 +83,8 @@ int main(void)
 	
 	// 获取最小生成树(普里姆算法)
 	pMap->primTree(0); // A-F F-B B-C F-D D-E
+	
+	// 获取最小生成树(普里姆算法)
+	pMap->kruskalTree();
 	return 0;
 }

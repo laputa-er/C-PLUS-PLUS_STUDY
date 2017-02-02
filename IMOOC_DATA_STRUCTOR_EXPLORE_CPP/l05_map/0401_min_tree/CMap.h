@@ -17,10 +17,14 @@ public:
 	void depthFirstTraverse(int nodeIndex); // 深度优先遍历
 	void breadthFirstTraverse(int nodeIndex); // 广度优先遍历
 	void primTree(int nodeIndex); // 通过普里姆算生成最小生成树
+	void kruskalTree(); // 克鲁斯卡尔算法生成最小生成树
 private:
 	int getMinEdge(vector<Edge> edgeVec); // 获取边集合中还没被选择的权值最小的边
 	bool getValueFromMatrix(int row, int col, int &val); // 从矩阵中获取权值
 	void breadthFirstTraverseImpl(vector<int> preVec); // 广度优先遍历实现函数
+	bool isInSet(vector<int> nodeSet, int target); // 判断某个值是否在某个 vector 当中
+	void mergeNodeSet(vector<int> &nodeSetA, vector<int> nodeSetB); // 将 nodeSetB 合并 nodeSetB
+	
 private:
 	int m_iCapacity; // 图中最多容纳的顶点数
 	int m_iNodeCount; // 已经添加的顶点（节点）的个数
