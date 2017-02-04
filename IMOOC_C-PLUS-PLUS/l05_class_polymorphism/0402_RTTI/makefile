@@ -1,12 +1,7 @@
-OBJS=main.o Bird.o Plane.o
-main: ${OBJS}
-	g++ -o test ${OBJS};
-	rm ${OBJS};
-main.o: main.cpp
-	g++ -c main.cpp
-Plane.o: Plane.cpp Plane.h Flyable.h
-	g++ -c Plane.cpp
-Bird.o: Bird.cpp Bird.h Flyable.h
-	g++ -c Bird.cpp
-clean:
-	rm -f test
+SRCS = main.cpp Bird.cpp Plane.cpp # 源文件
+PROG = demo # 最终打包的应用程序名
+CC = g++ # 编译工具
+CFLAGS = -g # 编译参数
+INSTALL_ROOT = /usr/local # 安装路径
+
+include frameWork.mk
